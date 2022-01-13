@@ -1,11 +1,24 @@
-# Solicitar autorização:
+# Authorization code grant type
+
+## Solicitar autorização:
 
 http://localhost:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uri=http://aplicacao-cliente
 
-# Retorno do authorization server:
+## Retorno do authorization server:
 
 http://aplicacao-cliente/?code=rPV1Ed&state=abc
 
-# Insomnia 
+## Insomnia 
 
 Authorization code - Solicitar token
+
+
+# Implicit grant type
+
+## Solicitar autorização:
+
+http://localhost:8081/oauth/authorize?response_type=token&client_id=webadmin&state=abc&redirect_uri=http://aplicacao-cliente
+
+## Retorno do authorization server:
+
+http://aplicacao-cliente/#access_token=0bd926da-8180-4046-ad74-f152154a4d51&token_type=bearer&state=abc&expires_in=43199&scope=read%20write

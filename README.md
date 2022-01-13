@@ -34,6 +34,10 @@
 
 - [Testando o fluxo Authorization Code com um client JavaScript](https://github.com/algaworks/curso-especialista-spring-rest/tree/master/22.19-testando-o-fluxo-authorization-code-com-um-client-javascript/foodanalytics)
 
+- Conhecendo o fluxo Implicit
+
+- Configurando o fluxo Implicit Grant Type
+
 - 
 
 ## AlgaFood API Repository
