@@ -22,6 +22,8 @@
 
 - Configurando o Refresh Token Grant Type no Authorization Server
 
+- Configurando a validade e não reutilização de Refresh Tokens
+
 - 
 
 ## AlgaFood API Repository
