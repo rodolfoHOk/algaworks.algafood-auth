@@ -25,10 +25,13 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		clients
 			.inMemory()
 				.withClient("algafood-web")
-				.secret(passwordEncoder.encode("web123"))
-				.authorizedGrantTypes("password")
-				.scopes("write", "read")
-				.accessTokenValiditySeconds(60 * 60 * 6);
+					.secret(passwordEncoder.encode("web123"))
+					.authorizedGrantTypes("password")
+					.scopes("write", "read")
+					.accessTokenValiditySeconds(60 * 60 * 6)
+				.and()
+				.withClient("checktoken")
+					.secret(passwordEncoder.encode("check123"));
 //			.and()
 //				.withClient("app-mobile")
 //				.secret(passwordEncoder.encode("mbl456"))
@@ -38,8 +41,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
-//		security.checkTokenAccess("isAuthenticated()");
-		security.checkTokenAccess("permitAll()");
+		security.checkTokenAccess("isAuthenticated()");
+//		security.checkTokenAccess("permitAll()");
 	}
 	
 	@Override // necessário para o fluxo de autenticação Password Credentials

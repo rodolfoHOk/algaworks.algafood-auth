@@ -16,6 +16,8 @@
 
 - Configurando o endpoint de introspecção de tokens no Authorization Server
 
+- [Configurando o Resource Server com a nova stack do Spring Security](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
 - 
 
 ## AlgaFood API Repository
