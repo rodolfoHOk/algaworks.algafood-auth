@@ -14,6 +14,8 @@
 
 - Configurando o fluxo Authorization Server com Password Credentials e Opaque Tokens
 
+- Configurando o endpoint de introspecção de tokens no Authorization Server
+
 - 
 
 ## AlgaFood API Repository
@@ -24,6 +26,14 @@ https://github.com/rodolfoHOk/algaworks.algafood-api
 
 ## Links Úteis
 
+### Especificação do OAuth 2.0
+
+https://datatracker.ietf.org/doc/html/rfc6749
+
 ### Dependências para resolver problema com Spring Security OAuth2 e Java 11+
 
 https://gist.github.com/thiagofa/ef9a40d495016cb2581add41b5cbde1b
+
+### RFC 7662 - OAuth 2.0 Token Introspection
+
+https://datatracker.ietf.org/doc/html/rfc7662
