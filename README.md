@@ -32,13 +32,15 @@
 
 - Configurando o Authorization Code Grant Type
 
-- [Testando o fluxo Authorization Code com um client JavaScript](https://github.com/algaworks/curso-especialista-spring-rest/tree/master/22.19-testando-o-fluxo-authorization-code-com-um-client-javascript/foodanalytics)
+- [Testando o fluxo Authorization Code com um client JavaScript](https://github.com/rodolfoHOk/algaworks.foodanalytics-js-client)
 
 - Conhecendo o fluxo Implicit
 
 - Configurando o fluxo Implicit Grant Type
 
 - Mais segurança com PKCE e Authorization Code Grant
+
+- Corrigindo CorsConfig
 
 - 
 
