@@ -12,6 +12,8 @@
 
 - Criando o projeto do Authorization Server com Spring Security OAuth2
 
+- Configurando o fluxo Authorization Server com Password Credentials e Opaque Tokens
+
 - 
 
 ## AlgaFood API Repository
