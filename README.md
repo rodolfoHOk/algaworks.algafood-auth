@@ -42,6 +42,8 @@
 
 - Corrigindo CorsConfig
 
+- Implementando o suporte a PKCE com o fluxo Authorization Code
+
 - 
 
 ## AlgaFood API Repository
@@ -71,3 +73,7 @@ https://gist.github.com/thiagofa/764260dfd8ba21f30f2f79806d734563
 ### RFC 7636 - PKCE
 
 https://datatracker.ietf.org/doc/html/rfc7636
+
+### Implementação de PKCE para Spring Security OAuth2 
+
+https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
