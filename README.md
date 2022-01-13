@@ -32,6 +32,8 @@
 
 - Configurando o Authorization Code Grant Type
 
+- [Testando o fluxo Authorization Code com um client JavaScript](https://github.com/algaworks/curso-especialista-spring-rest/tree/master/22.19-testando-o-fluxo-authorization-code-com-um-client-javascript/foodanalytics)
+
 - 
 
 ## AlgaFood API Repository
@@ -53,3 +55,7 @@ https://gist.github.com/thiagofa/ef9a40d495016cb2581add41b5cbde1b
 ### RFC 7662 - OAuth 2.0 Token Introspection
 
 https://datatracker.ietf.org/doc/html/rfc7662
+
+### Configuração de CORS no Authorization Server com CorsFilter 
+
+https://gist.github.com/thiagofa/764260dfd8ba21f30f2f79806d734563
