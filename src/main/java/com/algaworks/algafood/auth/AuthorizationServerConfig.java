@@ -34,19 +34,20 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 					.scopes("write", "read")
 					.accessTokenValiditySeconds(60 * 60 * 6) // 6 horas
 					.refreshTokenValiditySeconds(60 * 60 * 24) // 1 dia
-				.and()
-					.withClient("faturamento")
-						.secret(passwordEncoder.encode("fat123"))
-						.authorizedGrantTypes("client_credentials")
-						.scopes("write", "read")
-				.and()
-					.withClient("checktoken")
-						.secret(passwordEncoder.encode("check123"));
-//			.and()
-//				.withClient("app-mobile")
-//				.secret(passwordEncoder.encode("mbl456"))
-//				.authorizedGrantTypes("password", "outrogranttype")
-//				.scopes("write", "read");
+			.and()
+				.withClient("foodanalytics")
+					.secret(passwordEncoder.encode("ana123"))
+					.authorizedGrantTypes("authorization_code")
+					.scopes("write", "read")
+					.redirectUris("http://aplicacao-cliente")
+			.and()
+				.withClient("faturamento")
+					.secret(passwordEncoder.encode("fat123"))
+					.authorizedGrantTypes("client_credentials")
+					.scopes("write", "read")
+			.and()
+				.withClient("checktoken")
+					.secret(passwordEncoder.encode("check123"));
 	}
 	
 	@Override

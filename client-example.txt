@@ -1,0 +1,11 @@
+# Solicitar autorização:
+
+http://localhost:8081/oauth/authorize?response_type=code&client_id=foodanalytics&state=abc&redirect_uri=http://aplicacao-cliente
+
+# Retorno do authorization server:
+
+http://aplicacao-cliente/?code=rPV1Ed&state=abc
+
+# Insomnia 
+
+Authorization code - Solicitar token

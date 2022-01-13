@@ -28,6 +28,10 @@
 
 - Configurando o Client Credentials Grant Type no Authorization Server
 
+- Conhecendo o fluxo Authorization Code
+
+- Configurando o Authorization Code Grant Type
+
 - 
 
 ## AlgaFood API Repository
