@@ -24,6 +24,10 @@
 
 - Configurando a validade e não reutilização de Refresh Tokens
 
+- Conhecendo o fluxo Client Credentials
+
+- Configurando o Client Credentials Grant Type no Authorization Server
+
 - 
 
 ## AlgaFood API Repository
