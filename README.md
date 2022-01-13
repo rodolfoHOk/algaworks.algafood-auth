@@ -18,6 +18,10 @@
 
 - [Configurando o Resource Server com a nova stack do Spring Security](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
+- Conhecendo o fluxo para emitir e usar Refresh Tokens
+
+- Configurando o Refresh Token Grant Type no Authorization Server
+
 - 
 
 ## AlgaFood API Repository
