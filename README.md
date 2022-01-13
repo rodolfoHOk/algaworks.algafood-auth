@@ -38,6 +38,8 @@
 
 - Configurando o fluxo Implicit Grant Type
 
+- Mais segurança com PKCE e Authorization Code Grant
+
 - 
 
 ## AlgaFood API Repository
@@ -63,3 +65,7 @@ https://datatracker.ietf.org/doc/html/rfc7662
 ### Configuração de CORS no Authorization Server com CorsFilter 
 
 https://gist.github.com/thiagofa/764260dfd8ba21f30f2f79806d734563
+
+### RFC 7636 - PKCE
+
+https://datatracker.ietf.org/doc/html/rfc7636
