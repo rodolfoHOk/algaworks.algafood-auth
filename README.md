@@ -48,7 +48,13 @@
 
 - Testando o fluxo Authorization Code com PKCE com o método SHA-256
 
--
+- [Testando um client JavaScript com PKCE e Authorization Code](https://github.com/rodolfoHOk/algaworks.foodanalytics-js-client)
+
+- Decidindo qual fluxo OAuth2 usar
+
+### 22 - 
+
+- 
 
 ## AlgaFood API Repository
 
