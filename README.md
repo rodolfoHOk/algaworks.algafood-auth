@@ -50,7 +50,7 @@
 
 - [Testando um client JavaScript com PKCE e Authorization Code](https://github.com/rodolfoHOk/algaworks.foodanalytics-js-client)
 
-- Decidindo qual fluxo OAuth2 usar
+- [Decidindo qual fluxo OAuth2 usar](decidindoFluxoOAuth2.md)
 
 ### 22 - 
 
