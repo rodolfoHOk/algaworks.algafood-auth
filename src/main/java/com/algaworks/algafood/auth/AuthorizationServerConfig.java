@@ -40,7 +40,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 					.refreshTokenValiditySeconds(60 * 60 * 24) // 1 dia
 			.and()
 				.withClient("foodanalytics")
-					.secret(passwordEncoder.encode("ana123"))
+//					.secret(passwordEncoder.encode("ana123"))
+					.secret(passwordEncoder.encode(""))
 					.authorizedGrantTypes("authorization_code")
 					.scopes("write", "read")
 					.redirectUris("http://aplicacao-cliente", "http://localhost:8082")
@@ -62,7 +63,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
-		security.checkTokenAccess("isAuthenticated()");
+		security.checkTokenAccess("isAuthenticated()")
+			.allowFormAuthenticationForClients();
 //		security.checkTokenAccess("permitAll()");
 	}
 	

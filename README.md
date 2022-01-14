@@ -44,7 +44,11 @@
 
 - Implementando o suporte a PKCE com o fluxo Authorization Code
 
-- 
+- Testando o fluxo Authorization Code com PKCE com o método plain
+
+- Testando o fluxo Authorization Code com PKCE com o método SHA-256
+
+-
 
 ## AlgaFood API Repository
 
@@ -77,3 +81,7 @@ https://datatracker.ietf.org/doc/html/rfc7636
 ### Implementação de PKCE para Spring Security OAuth2 
 
 https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
+
+### Ferramenta online para gerar Code Verifier e Code Challenge (PKCE)
+
+https://tonyxu-io.github.io/pkce-generator/
