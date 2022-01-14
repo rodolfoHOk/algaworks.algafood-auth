@@ -52,7 +52,11 @@
 
 - [Decidindo qual fluxo OAuth2 usar](decidindoFluxoOAuth2.md)
 
-### 22 - 
+### 22 - OAuth2 avançado com JWT e controle de acesso
+
+- Armazenando tokens no Redis: um banco de dados NoSQL
+
+- Configurando o RedisTokenStore
 
 - 
 
