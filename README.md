@@ -58,6 +58,12 @@
 
 - Configurando o RedisTokenStore
 
+- Entendendo a diferença entre Stateful e Stateless Authentication
+
+- Transparent Tokens: conhecendo o JSON Web Tokens (JWT)
+
+- Gerando JWT com chave simétrica (HMAC SHA-256) no Authorization Server
+
 - 
 
 ## AlgaFood API Repository
@@ -95,3 +101,11 @@ https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
 ### Ferramenta online para gerar Code Verifier e Code Challenge (PKCE)
 
 https://tonyxu-io.github.io/pkce-generator/
+
+### RFC 7519 - JSON Web Token
+
+https://datatracker.ietf.org/doc/html/rfc7519
+
+### Ferramenta online para debugging de JWT
+
+https://jwt.io/
