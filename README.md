@@ -80,6 +80,10 @@
 
 - Autenticando usuário com dados do banco de dados
 
+- [Refatorando serviços de usuários para usar BCrypt](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- Adicionando claims customizadas no payload do JWT
+
 - 
 
 ## AlgaFood API Repository
