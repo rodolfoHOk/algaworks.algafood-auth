@@ -72,6 +72,8 @@
 
 - Assinando o JWT com RSA SHA-256 (chave assimétrica)
 
+- Extraindo a chave pública no formato PEM
+
 - 
 
 ## AlgaFood API Repository
@@ -89,6 +91,14 @@ CMD Exemplo: keytool -genkeypair -alias algafood -keyalg RSA -keypass 123456 -ke
 ### Listando as entradas de um arquivo JKS
 
 CMD Exemplo: keytool -list -keystore algafood.jks
+
+### Gerando o certificado
+
+CMD Exemplo: keytool -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
+
+### Gerando a chave pública
+
+CMD Exemplo: openssl x509 -pubkey -noout -in algafood-cert.pem > algafood-pkey.pem
 
 ## Links Úteis
 

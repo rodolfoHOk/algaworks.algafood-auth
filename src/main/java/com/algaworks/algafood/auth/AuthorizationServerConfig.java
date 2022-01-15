@@ -3,7 +3,6 @@ package com.algaworks.algafood.auth;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
@@ -33,8 +32,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Autowired
 	private UserDetailsService userDetailsService;
 	
-	@Value("${token.jwt.keystore.pass}")
-	private String tokenJwtKeystorePass;
+	@Autowired
+	private JwtKeyStoreProperties jwtKeyStoreProperties;
 	
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
@@ -72,6 +71,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
 		security.checkTokenAccess("isAuthenticated()")
+			.tokenKeyAccess("permitAll()")
 			.allowFormAuthenticationForClients();
 //		security.checkTokenAccess("permitAll()");
 	}
@@ -91,9 +91,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		var jwtAccessTokenConverter = new JwtAccessTokenConverter();
 //		jwtAccessTokenConverter.setSigningKey("OEYuAy7esZ~.MPYgC9d_wVOlrUV0BUZFyzglS_T9d.TfwI3Bms3pQtztzqQ8GELCigb-uT-Rb0zseQQ91P51AxPvT0xsq-ExgwnusdoHjhgw8TQBEOFASShf.hBa442X"); // chave simples para didática apenas
 		
-		var jksResource = new ClassPathResource("keystores/algafood.jks");
-		var keyStorePass = tokenJwtKeystorePass;
-		var keyPairAlias = "algafood";
+		var jksResource = new ClassPathResource(jwtKeyStoreProperties.getPath());
+		var keyStorePass = jwtKeyStoreProperties.getPassword();
+		var keyPairAlias = jwtKeyStoreProperties.getKeypairAlias();
 		
 		var keyStoreKeyFactory = new KeyStoreKeyFactory(jksResource, keyStorePass.toCharArray());
 		var keyPair = keyStoreKeyFactory.getKeyPair(keyPairAlias);
