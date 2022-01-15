@@ -83,7 +83,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Bean
 	public JwtAccessTokenConverter jwtAccessTokenConverter() {
 		JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
-		jwtAccessTokenConverter.setSigningKey("algaworks"); // chave simples para didática apenas
+		jwtAccessTokenConverter.setSigningKey("OEYuAy7esZ~.MPYgC9d_wVOlrUV0BUZFyzglS_T9d.TfwI3Bms3pQtztzqQ8GELCigb-uT-Rb0zseQQ91P51AxPvT0xsq-ExgwnusdoHjhgw8TQBEOFASShf.hBa442X"); // chave simples para didática apenas
 		
 		return jwtAccessTokenConverter;
 	}

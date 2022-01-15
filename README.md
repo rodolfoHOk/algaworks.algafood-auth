@@ -64,6 +64,8 @@
 
 - Gerando JWT com chave simétrica (HMAC SHA-256) no Authorization Server
 
+- [Configurando o Resource Server para JWT assinado com chave simétrica](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
 - 
 
 ## AlgaFood API Repository
