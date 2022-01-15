@@ -78,6 +78,8 @@
 
 - Revisando o fluxo de aprovação do Authorization Code com JWT
 
+- Autenticando usuário com dados do banco de dados
+
 - 
 
 ## AlgaFood API Repository
@@ -141,3 +143,7 @@ https://datatracker.ietf.org/doc/html/rfc7519
 ### Ferramenta online para debugging de JWT
 
 https://jwt.io/
+
+### Bcrypt Generator
+
+https://bcrypt-generator.com/
