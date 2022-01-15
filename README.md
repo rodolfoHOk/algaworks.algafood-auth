@@ -66,6 +66,12 @@
 
 - [Configurando o Resource Server para JWT assinado com chave simétrica](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
+- Entendendo a diferença entre assinatura com chave simétrica e assimétrica
+
+- Gerando um par de chaves com keytool
+
+- Assinando o JWT com RSA SHA-256 (chave assimétrica)
+
 - 
 
 ## AlgaFood API Repository
@@ -73,6 +79,16 @@
 ### GitHub
 
 https://github.com/rodolfoHOk/algaworks.algafood-api
+
+## Keytool (Ferramenta para gerar par de chaves para usar no token assimétrico)
+
+### Gerando um arquivo JKS com um par de chaves
+
+CMD Exemplo: keytool -genkeypair -alias algafood -keyalg RSA -keypass 123456 -keystore algafood.jks -storepass 123456 -validity 3650
+
+### Listando as entradas de um arquivo JKS
+
+CMD Exemplo: keytool -list -keystore algafood.jks
 
 ## Links Úteis
 
