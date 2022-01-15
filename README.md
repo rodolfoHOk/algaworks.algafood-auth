@@ -74,6 +74,10 @@
 
 - Extraindo a chave pública no formato PEM
 
+- [Configurando a validação de JWT no Resource Server com a chave pública](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- Revisando o fluxo de aprovação do Authorization Code com JWT
+
 - 
 
 ## AlgaFood API Repository

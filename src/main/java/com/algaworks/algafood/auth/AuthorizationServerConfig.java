@@ -16,6 +16,9 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.CompositeTokenGranter;
 import org.springframework.security.oauth2.provider.TokenGranter;
+import org.springframework.security.oauth2.provider.approval.ApprovalStore;
+import org.springframework.security.oauth2.provider.approval.TokenApprovalStore;
+import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory;
 
@@ -83,6 +86,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 			.userDetailsService(userDetailsService) // necessário para o fluxo de autenticação de refresh token
 			.reuseRefreshTokens(false)
 			.accessTokenConverter(jwtAccessTokenConverter())
+			.approvalStore(approvalStore(endpoints.getTokenStore())) // tem que ser após accessTokenConverter, mais info vide método approvalStore
 			.tokenGranter(tokenGranter(endpoints)); // suporte a PKCE com o fluxo Authorization Code
 	}
 	
@@ -101,6 +105,14 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		jwtAccessTokenConverter.setKeyPair(keyPair);
 		
 		return jwtAccessTokenConverter;
+	}
+	
+	// para voltar a aparecer os escopos na tela de autorização
+	private ApprovalStore approvalStore(TokenStore tokenStore) {
+		var approvalStore = new TokenApprovalStore();
+		approvalStore.setTokenStore(tokenStore);
+		
+		return approvalStore;
 	}
 	
 	// suporte a PKCE com o fluxo Authorization Code
