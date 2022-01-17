@@ -84,6 +84,12 @@
 
 - Adicionando claims customizadas no payload do JWT
 
+- [Obtendo usuário autenticado no Resource Server](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Definindo e criando as permissões de acesso](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- Carregando as permissões concedidas na autenticação
+
 - 
 
 ## AlgaFood API Repository
