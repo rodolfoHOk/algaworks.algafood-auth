@@ -90,7 +90,19 @@
 
 - Carregando as permissões concedidas na autenticação
 
-- 
+- [Carregando as Granted Authorities e restringindo acesso a endpoints na API](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Method Security: Restringindo acesso com @PreAuthorize e SpEL](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Tratando AccessDeniedException no ExceptionHandler](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Simplificando o controle de acesso em métodos com meta-anotações](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- Entendendo os escopos do OAuth2
+
+- [Carregando Granted Authorities dos escopos do OAuth2 no Resource Server](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+-
 
 ## AlgaFood API Repository
 
