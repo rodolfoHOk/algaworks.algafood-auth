@@ -102,7 +102,19 @@
 
 - [Carregando Granted Authorities dos escopos do OAuth2 no Resource Server](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
--
+- [Restringindo acesso a endpoints por escopos do OAuth2](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Restringindo acesso dos endpoints de restaurantes](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Restringindo acessos de forma contextual (sensível à informação)](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Restringindo acessos com @PostAuthorize](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Restringindo acessos ao endpoint de pesquisa de pedidos](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- [Restringindo acessos aos endpoints de transição de ... (5)](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+- 
 
 ## AlgaFood API Repository
 
