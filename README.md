@@ -122,7 +122,9 @@
 
 - [Gerando links do HAL dinamicamente de acordo com permissões](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
-- 
+- Juntando o Resource Server com o Authorization Server no mesmo projeto
+
+- [Mais em AlgaFood API Repository](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
 ## AlgaFood API Repository
 
