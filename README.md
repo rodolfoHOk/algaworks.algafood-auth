@@ -114,6 +114,8 @@
 
 - [Restringindo acessos aos endpoints de ... (5)](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
+- Configurando os clientes OAuth2 em um banco de dados SQL
+
 - 
 
 ## AlgaFood API Repository
@@ -181,3 +183,7 @@ https://jwt.io/
 ### Bcrypt Generator
 
 https://bcrypt-generator.com/
+
+### DDL da tabela de clientes OAuth2
+
+https://gist.github.com/thiagofa/7b1792745d4de64bd86b230d0e3a381d
