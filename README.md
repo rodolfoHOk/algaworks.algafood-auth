@@ -118,6 +118,8 @@
 
 - [Cadastrando clientes OAuth2 no banco de dados e testando a emissão de tokens](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
+- [Corrigindo lógica de restrição de acessos para Client Credentials Flow](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
 - 
 
 ## AlgaFood API Repository
