@@ -120,7 +120,7 @@
 
 - [Corrigindo lógica de restrição de acessos para Client Credentials Flow](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
-- [Gerando links do HAL dinamicamente de acordo com permissões do usuário](https://github.com/rodolfoHOk/algaworks.algafood-api)
+- [Gerando links do HAL dinamicamente de acordo com permissões](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
 - 
 
