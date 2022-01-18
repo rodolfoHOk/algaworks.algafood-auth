@@ -116,6 +116,8 @@
 
 - Configurando os clientes OAuth2 em um banco de dados SQL
 
+- [Cadastrando clientes OAuth2 no banco de dados e testando a emissão de tokens](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
 - 
 
 ## AlgaFood API Repository
