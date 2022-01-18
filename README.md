@@ -112,7 +112,7 @@
 
 - [Restringindo acessos ao endpoint de pesquisa de pedidos](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
-- [Restringindo acessos aos endpoints de transição de ... (5)](https://github.com/rodolfoHOk/algaworks.algafood-api)
+- [Restringindo acessos aos endpoints de ... (5)](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
 - 
 
