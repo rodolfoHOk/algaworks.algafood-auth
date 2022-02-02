@@ -1,8 +1,10 @@
-# AlgaFood Authorization Server - Curso Especialista Spring Rest da AlgaWorks
+# AlgaFood Authorization Server
 
-## Conteúdo (histórico de commits em ordem cronológica):
+> Authorization Server do Curso Especialista Spring Rest da AlgaWorks
 
-### 21 - Segurança com Spring Security e OAuth2
+## Conteúdo
+
+### Segurança com Spring Security e OAuth2
 
 - Introdução ao OAuth2
 
@@ -52,7 +54,7 @@
 
 - [Decidindo qual fluxo OAuth2 usar](decidindoFluxoOAuth2.md)
 
-### 22 - OAuth2 avançado com JWT e controle de acesso
+### OAuth2 avançado com JWT e controle de acesso
 
 - Armazenando tokens no Redis: um banco de dados NoSQL
 
@@ -126,11 +128,21 @@
 
 - [Mais em AlgaFood API Repository](https://github.com/rodolfoHOk/algaworks.algafood-api)
 
-## AlgaFood API Repository
+## Repositórios dos projetos do curso
 
-### GitHub
+[Injeção de dependências com Spring IoC](https://github.com/rodolfoHOk/algaworks.esr.injecaodependencias)
 
-https://github.com/rodolfoHOk/algaworks.algafood-api
+[AlgaFood API](https://github.com/rodolfoHOk/algaworks.algafood-api)
+
+[AlgaFood Relatórios com JasperReport](https://github.com/rodolfoHOk/algaworks.algafood-reports)
+
+[AlgaFood Authorization Server](https://github.com/rodolfoHOk/algaworks.algafood-auth)
+
+[AlgaFood JavaScript Client](https://github.com/rodolfoHOk/algaworks.algafood-js-client)
+
+[AlgaFood JavaClient](https://github.com/rodolfoHOk/algaworks.algafood-java-client)
+
+[FoodAnalytics JavaScript Client](https://github.com/rodolfoHOk/algaworks.foodanalytics-js-client)
 
 ## Keytool (Ferramenta para gerar par de chaves para usar no token assimétrico)
 
