@@ -6,6 +6,14 @@
 
 ### Segurança com Spring Security e OAuth2
 
+- Introdução à segurança de REST APIs
+
+- Adicionando segurança na API com Spring Security
+
+- Configurando Spring Security com HTTP Basic
+
+- Configurando autenticação de usuários em memória
+
 - Introdução ao OAuth2
 
 - Soluções para OAuth2: nova stack do Spring Security vs Spring Security OAuth
@@ -52,7 +60,7 @@
 
 - [Testando um client JavaScript com PKCE e Authorization Code](https://github.com/rodolfoHOk/algaworks.foodanalytics-js-client)
 
-- [Decidindo qual fluxo OAuth2 usar](decidindoFluxoOAuth2.md)
+- [Decidindo qual fluxo OAuth2 usar](decidindo-fluxo-oauth2.md)
 
 ### OAuth2 avançado com JWT e controle de acesso
 
@@ -74,9 +82,11 @@
 
 - Assinando o JWT com RSA SHA-256 (chave assimétrica)
 
+- Criando bean de propriedades de configuração do KeyStore
+
 - Extraindo a chave pública no formato PEM
 
-- [Configurando a validação de JWT no Resource Server com a chave pública](https://github.com/rodolfoHOk/algaworks.algafood-api)
+- Configurando a validação de JWT no Resource Server com a chave pública
 
 - Revisando o fluxo de aprovação do Authorization Code com JWT
 
@@ -144,66 +154,36 @@
 
 [FoodAnalytics JavaScript Client](https://github.com/rodolfoHOk/algaworks.foodanalytics-js-client)
 
-## Keytool (Ferramenta para gerar par de chaves para usar no token assimétrico)
+## Outros arquivos markdown sobre o curso:
 
-### Gerando um arquivo JKS com um par de chaves
+[Guia de requisições de autenticação para os clients](client-example.md)
 
-CMD Exemplo: keytool -genkeypair -alias algafood -keyalg RSA -keypass 123456 -keystore algafood.jks -storepass 123456 -validity 3650
+[Guia de uso do Keytool](keytool-guia.md)
 
-### Listando as entradas de um arquivo JKS
+[Decidindo qual fluxo OAuth2 usar](decidindo-fluxo-oauth2.md)
 
-CMD Exemplo: keytool -list -keystore algafood.jks
-
-### Gerando o certificado
-
-CMD Exemplo: keytool -export -rfc -alias algafood -keystore algafood.jks -file algafood-cert.pem
-
-### Gerando a chave pública
-
-CMD Exemplo: openssl x509 -pubkey -noout -in algafood-cert.pem > algafood-pkey.pem
+[Conteúdo completo do curso ESR](conteudo-curso.md)
 
 ## Links Úteis
 
-### Especificação do OAuth 2.0
+[Especificação do OAuth 2.0](https://datatracker.ietf.org/doc/html/rfc6749)
 
-https://datatracker.ietf.org/doc/html/rfc6749
+[Dependências para resolver problema com Spring Security OAuth2 e Java 11+](https://gist.github.com/thiagofa/ef9a40d495016cb2581add41b5cbde1b)
 
-### Dependências para resolver problema com Spring Security OAuth2 e Java 11+
+[RFC 7662 - OAuth 2.0 Token Introspection](https://datatracker.ietf.org/doc/html/rfc7662)
 
-https://gist.github.com/thiagofa/ef9a40d495016cb2581add41b5cbde1b
+[Configuração de CORS no Authorization Server com CorsFilter](https://gist.github.com/thiagofa/764260dfd8ba21f30f2f79806d734563)
 
-### RFC 7662 - OAuth 2.0 Token Introspection
+[RFC 7636 - PKCE](https://datatracker.ietf.org/doc/html/rfc7636)
 
-https://datatracker.ietf.org/doc/html/rfc7662
+[Implementação de PKCE para Spring Security OAuth2](https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca)
 
-### Configuração de CORS no Authorization Server com CorsFilter 
+[Ferramenta online para gerar Code Verifier e Code Challenge (PKCE)](https://tonyxu-io.github.io/pkce-generator/)
 
-https://gist.github.com/thiagofa/764260dfd8ba21f30f2f79806d734563
+[RFC 7519 - JSON Web Token](https://datatracker.ietf.org/doc/html/rfc7519)
 
-### RFC 7636 - PKCE
+[Ferramenta online para debugging de JWT](https://jwt.io/)
 
-https://datatracker.ietf.org/doc/html/rfc7636
+[Bcrypt Generator](https://bcrypt-generator.com/)
 
-### Implementação de PKCE para Spring Security OAuth2 
-
-https://gist.github.com/thiagofa/daca4f4790b5b18fed800b83747127ca
-
-### Ferramenta online para gerar Code Verifier e Code Challenge (PKCE)
-
-https://tonyxu-io.github.io/pkce-generator/
-
-### RFC 7519 - JSON Web Token
-
-https://datatracker.ietf.org/doc/html/rfc7519
-
-### Ferramenta online para debugging de JWT
-
-https://jwt.io/
-
-### Bcrypt Generator
-
-https://bcrypt-generator.com/
-
-### DDL da tabela de clientes OAuth2
-
-https://gist.github.com/thiagofa/7b1792745d4de64bd86b230d0e3a381d
+[DDL da tabela de clientes OAuth2](https://gist.github.com/thiagofa/7b1792745d4de64bd86b230d0e3a381d)
